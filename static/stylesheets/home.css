@@ -3,14 +3,22 @@ html, body {
 }
 
 #popular {
-    position: absolute;
-    color: 
-    margin-top: 30px;
+    position: relative;
+    width:250px;
+    height:250px;
+    top: 150px;
+    left: 50px;
+    right:50px;
+    
 }
-#style {
-    position: absolute;
-    margin-top: 30px;
 
+#style {
+    position: relative;
+    width:250px;
+    height:250px;
+    top: 150px;
+    left: 50px;
+    right:50px;
 }
 /* #hi {
     background-color: blue;
