@@ -9,9 +9,17 @@ html, body {
     top: 150px;
     left: 50px;
     right:50px;
+
     
 }
-
+#p-word{
+    font-family: '微軟正黑體';
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    right:25px;
+}
 #style {
     position: relative;
     width:250px;
@@ -19,6 +27,14 @@ html, body {
     top: 150px;
     left: 50px;
     right:50px;
+}
+#s-word{
+    font-family: '微軟正黑體';
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    right:25px;
 }
 /* #hi {
     background-color: blue;
