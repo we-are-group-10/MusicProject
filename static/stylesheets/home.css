@@ -9,7 +9,7 @@ html, body {
     top: 150px;
     left: 50px;
     right:50px;
-
+    border-radius: 15% 15% 0% 15%;
     
 }
 #p-word{
@@ -19,7 +19,7 @@ html, body {
     top: 100px;
     left: 25px;
     right:25px;
-}
+}s
 #style {
     position: relative;
     width:250px;
@@ -27,6 +27,8 @@ html, body {
     top: 150px;
     left: 50px;
     right:50px;
+    border-radius: 15% 15% 15% 0%;
+    
 }
 #s-word{
     font-family: '微軟正黑體';
@@ -36,6 +38,3 @@ html, body {
     left: 25px;
     right:25px;
 }
-/* #hi {
-    background-color: blue;
-} */
