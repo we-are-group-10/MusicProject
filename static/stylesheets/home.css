@@ -3,16 +3,38 @@ html, body {
 }
 
 #popular {
+    display:block;
     position: relative;
     width:250px;
     height:250px;
     top: 150px;
     left: 50px;
     right:50px;
-
     
 }
+/* 冷門 */
+#c-word {
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    right:25px;
+}
+/* 熱門 */
+#h-word {
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 50px;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    right:30px;
+}
+
 #p-word{
+    display: block;
     font-family: '微軟正黑體';
     font-size: 50px;
     position: absolute;
@@ -36,6 +58,3 @@ html, body {
     left: 25px;
     right:25px;
 }
-/* #hi {
-    background-color: blue;
-} */
