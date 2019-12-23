@@ -28,7 +28,7 @@ class Artist (models.Model): #歌手
     class Meta: #資料表顯示時的名字
         verbose_name, verbose_name_plural = '歌手資訊', '歌手資訊'
     def __str__(self): #指到這個 table 時顯示資料的方式
-        return self.artist
+        return self.artist_name
 
 @admin.register(Artist) #將此 model 註冊進 admin 裡
 class ArtistAdmin(admin.ModelAdmin): #admin 的管理方式
