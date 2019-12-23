@@ -23,7 +23,6 @@ class CategoryAdmin(admin.ModelAdmin): #admin 的管理方式
 # 歌手資訊(table)
 class Artist (models.Model): #歌手
     artist_name = models.TextField(verbose_name='歌手名稱')
-    song = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name='歌曲') #分類(table)
     picture = models.ImageField(verbose_name='歌手照片')
     introduce = models.TextField(verbose_name='歌手介紹')
     class Meta: #資料表顯示時的名字
