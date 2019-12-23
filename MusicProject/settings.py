@@ -30,11 +30,11 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+INSTALLED_APPS = [ # 要執行的東西
+    'django.contrib.admin', # 管理員介面
+    'django.contrib.auth', # 登入授權介面
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    'django.contrib.sessions', # cookie
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
