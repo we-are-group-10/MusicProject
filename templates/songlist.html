@@ -8,16 +8,34 @@
   <title>Document</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/static/stylesheets/songlist.css">
 </head>
+
 <body>
-  <div class="box box13">
-    <div class="content">
-      立馬來看 Amos 實際完成的
-      <a href="http://csscoke.com/2015/07/31/nth-child_rwd_album/">
-        CSS3精美相簿效果
-      </a>
-      效果吧！別忘了拖拉一下視窗看看 RWD 效果喔！
+  <div class="container">
+    <div id="btn-box" class="row">
+      <div id="pic-div" class="col s12 m4 l4">
+        <span><img id = "pic-button"
+          src="https://cdn.shopify.com/s/files/1/0082/4315/0908/products/OMAM_FeverDream_Explicit1_1_3000x.jpg?v=1558206646" width="100%">
+          <div class="row">
+            <div id="song-div" class="col s12 m9 l6">
+              <span id="song-name" class="btn-flat">Wild Roses
+              </span>
+              <span id="singer" class="btn-flat">Of Monsters
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
     </div>
+    
   </div>
+
+  <!-- 使用materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- js -->
+  <!-- 使用jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
+
 </html>
