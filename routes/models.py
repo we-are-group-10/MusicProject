@@ -23,13 +23,12 @@ class CategoryAdmin(admin.ModelAdmin): #admin 的管理方式
 # 歌手資訊(table)
 class Artist (models.Model): #歌手
     artist_name = models.TextField(verbose_name='歌手名稱')
-    song = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name='歌曲') #分類(table)
     picture = models.ImageField(verbose_name='歌手照片')
     introduce = models.TextField(verbose_name='歌手介紹')
-    class Meta: #資料表顯示時的名字
+    class Meta: # 資料表顯示時的名字
         verbose_name, verbose_name_plural = '歌手資訊', '歌手資訊'
     def __str__(self): #指到這個 table 時顯示資料的方式
-        return self.artist
+        return self.artist_name
 
 @admin.register(Artist) #將此 model 註冊進 admin 裡
 class ArtistAdmin(admin.ModelAdmin): #admin 的管理方式
@@ -54,11 +53,14 @@ class SongInfo (models.Model):
     class Meta: #資料表顯示時的名字
         verbose_name, verbose_name_plural = '歌曲資訊', '歌曲資訊'
     def artist_name(self):
-        try:
-            return self.artist.artist_name
-        except :
+        try: # 去除最後一個 Artist 後面的逗號
+            all_artist = self.artist.all()
+            data = all_artist[0].artist_name
+            for x in range(1, len(all_artist)):
+                data = data + ", " + all_artist[x].artist_name
+            return data
+        except:
             return "invaild"
-        
 
 @admin.register(SongInfo) #將此 model 註冊進 admin 裡
 class SongInfoAdmin(admin.ModelAdmin): #admin 的管理方式
