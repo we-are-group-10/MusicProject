@@ -4,5 +4,5 @@ from django.shortcuts import render
 #templates裡會用到的檔案 皆在這呼叫
 def home(request) :
     return render(request, 'home.html')
-def showMusic(request) :
-    return render(request, 'showMusic.html')
+def songlist(request) :
+    return render(request, 'songlist.html')
