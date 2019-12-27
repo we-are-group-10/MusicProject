@@ -8,5 +8,5 @@ def showMusic(request) :
     return render(request, 'showMusic.html')
 def play(request) :
     return render(request, 'play.html')
-def songlist(request) : 
-    return render(request, 'songlist.html')
+# def songlist(request) : 
+#     return render(request, 'songlist.html')
