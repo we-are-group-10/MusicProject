@@ -32,7 +32,7 @@ html, body {
     margin-top: 10px;
     padding-top: 10em;
     line-height:0px;
-    /* color: black; */
+    color: black;
 }
 #video{
     position: relative;
