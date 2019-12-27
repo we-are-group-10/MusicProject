@@ -52,14 +52,15 @@ class SongInfo (models.Model):
     mv = models.URLField(max_length = 200, verbose_name='MV')
     class Meta: #資料表顯示時的名字
         verbose_name, verbose_name_plural = '歌曲資訊', '歌曲資訊'
-    try: # 去除最後一個 Artist 後面的逗號
+    def artist_name(self):
+        try: # 去除最後一個 Artist 後面的逗號
             all_artist = self.artist.all()
             data = all_artist[0].artist_name
             for x in range(1, len(all_artist)):
                 data = data + ", " + all_artist[x].artist_name
             return data
         except:
-            return "invaild"
+            return "invalid"
         
 
 @admin.register(SongInfo) #將此 model 註冊進 admin 裡
