@@ -30,13 +30,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+INSTALLED_APPS = [ # 要執行的東西
+    'django.contrib.admin', # 管理員介面
+    'django.contrib.auth', # 登入授權介面
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    'django.contrib.sessions', # cookie
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'routes', # models 資料夾的名字(不在 MusicProject 資料夾中則需寫完整路徑)
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,6 @@ STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder"
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
