@@ -25,7 +25,7 @@
           <!-- <div class="col s12 m12 offset-m1 xl7 offset-xl1"> -->
           
           <div id="video" class="section scrollspy row">
-            <div class="col l12"><h6 class="header">影片</h6></div>
+            <div class="col l12"><h6 class="header">{{song.song_name}}</h6></div>
             <div class="col l5">
               <p>
                 <iframe width="280" height="175" src="{{song.mv}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -36,10 +36,9 @@
             {% for artist in song.artist.all %}
             <div class="col"><a id="song" onclick="location.href='/artistpage/{{artist.id}}/'" class="intro">{{artist.artist_name}}</a></div>
             {% endfor %}
-            <div class="col"><a id="song" href="#">{{song.song_name}}</a></div>
-            <div class="col"><a id="year" href="#">{{song.year}}</a></div>
             <div class="col"><a id="popular" onclick="location.href='/songlist/category/{{song.category}}/'" class="intro">{{song.category}}</a></div>
             <div class="col"><a id="style" onclick="location.href='/songlist/style/{{song.style}}/'" class="intro">{{song.style}}</a></div>
+            <div class="col"><a id="year" href="#">{{song.year}}</a></div>
             </div>
           <div id="lyrics" class="section scrollspy row">
             <h6 class="header">歌詞</h6>
