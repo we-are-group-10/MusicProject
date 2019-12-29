@@ -16,29 +16,26 @@
 #song-name{
     font-size: 2vw;
     max-width: 20vw;
-
 }
 #singer-name{
     font-size: 15px;
     max-width: 10vw;
     text-decoration: underline;
 }
-/* #song-namerun{
-    display: none;
-} */
 .card-title{
     min-width: 35vw;
     height: 10vh;
     margin-left: 1px;
     margin-bottom: 1vh;
 }
-#story-box{
-    max-width: 35vw;
-}
 #story-content{
     font-family: '微軟正黑體';
     font-size: 15px;
-    min-width: 35vw;
-    white-space: nowrap;
-    text-overflow: ellipsis; 
+    width: 15vw;
+}
+
+.card-reveal {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
