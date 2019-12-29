@@ -6,3 +6,5 @@ def home(request) :
     return render(request, 'home.html')
 def songlist(request) :
     return render(request, 'songlist.html')
+def artistpage(request) :
+    return render(request, 'artistpage.html')
