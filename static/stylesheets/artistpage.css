@@ -1,43 +1,51 @@
-/* 不貼齊頁面頂端 */
-/* #head{
-    margin-top:30px ;
-} */
+#btn-box{
+    margin-top: 3%;
+}
 #singerPhoto{
-    margin-top: 50px;
     height: 250px;
     width: 250px;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 #singerIntro{
     font-family : '微軟正黑體';
     font-size: 15px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
-/* .ellipsis{
-    overflow: hidden;
-    white-space: nowrap;
+.title_intro{
+    font-family: '微軟正黑體';
+    font-size: 25px;
+}
+.ellipsis {
+    overflow: auto; /*文字溢出 滾輪顯示*/
+    white-space: nowrap; /*文本不換行 直到遇到br*/
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    white-space: normal;
-} */
-/* 要寫js做動態載入 */
-#song1, #song2, #song3{
+    -webkit-line-clamp: 10; /*行數*/
+    -webkit-box-orient: vertical; /*由上而下垂直排列*/
+    white-space: normal; /*空白會被瀏覽器忽略*/
+
+}
+.title_list{
+    font-family: '微軟正黑體';
+    font-size: 25px;
+}
+a {
+    color: inherit; /* 移除超連結 */
+    display: block;
+    font-size: 1.2rem;
+    border: 0;
+    text-decoration: none; /* 移除超連結底線 */
+}
+.songList {
     font-family: '微軟正黑體';
     font-size: 15px;
     margin-top: 5px;
     border: 1px;
-    background-color: rgb(230, 230, 230);
+    background-color: #bcaaa4;
+    color: rgb(40, 40, 40);
 }
-a {
-    color: inherit;
-    display: block;
-    font-size: 1.2rem;
-    border: 0;
-    text-decoration: none;
-}
-li :hover{
-    background-color: rgb(115, 115, 115);
+.songList:hover{ /* 游標移置 */
+    background-color: #a1887f;
     color: white;
 }
