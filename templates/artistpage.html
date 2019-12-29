@@ -18,12 +18,15 @@
   <div class="container">
     <div id="btn-box" class="row">
       <!-- 寫該row裡的column -->
-      <div class="col s12 m4 l4">
-        <img id="singerPhoto" src="/media/{{artist.picture}}" alt="Image" border="0">
+      <div class="col s12 m12 l12">
+        <span class="title_pic">Dan + Shay</span>
+      </div>
+      <div class="singerPhoto col s12 m4 l4">
+        <img src="/media/{{artist.picture}}" alt="Image" border="0">
       </div>
       <!-- 歌手介紹 -->
       <div id="singerIntro" class="col s12 m8 l8">
-        <span class="title_intro">歌手介紹</span>
+        <span class="title_intro">簡介</span>
         <div class="ellipsis">
           {{artist.introduce}}
         </div>
