@@ -19,30 +19,26 @@
       <div id="pic-div" class="col s6 m4 l4">
         <div class="card">
           <div class="activator card-image waves-effect waves-block waves-light">
-            <div><img id="pic-button" src="/media/{{song.artwork}}" width="100%">
+            <div>
+              <img id="pic-button" src="/media/{{song.artwork}}" width="100%">
             </div>
             <span id="song-name" class="card-title btn-flat" style="text-decoration:underline;"
-              title="{{song.song_name}}">{{song.song_name}}</span>
+              title="{{song.song_name}}">{{song.song_name}}
+            </span>
           </div>
           <div class="row">
-            <!-- artist 不只一個，用 for 迴圈叫出每一個 -->
-            <!--  all_artist = self.artist.all()
-        all_artist = self.artist.all()
-            data = all_artist[0].artist_name
-            for x in range(1, len(all_artist)): # 去除最後一個 Artist 後面的逗號
-                data = data + ", " + all_artist[x].artist_name  -->
             <div id="song-div" class="col s6 m6 l6">
               <span id="singer-name" class="btn-flat "
                 title="{% for artist in song.artist.all %}{{artist}}{% if not forloop.last %},{% endif %}{% endfor %}">
-              <div id="singer-name" class="btn-flat ">
-                <!-- artist 不只一個，用 for 迴圈叫出每一個 -->
-                {% for artist in song.artist.all %}
-                <!-- 若為 for 迴圈的最後一次為 true -->
-                {{artist}}
-                {% if not forloop.last %}
-                ,
-                {% endif %}
-                {% endfor %}
+                <div id="singer-name" class="btn-flat ">
+                  {% for artist in song.artist.all %}
+                  <!-- 若為 for 迴圈的最後一次為 true -->
+                  {{artist}}
+                  {% if not forloop.last %}
+                  ,
+                  {% endif %}
+                  {% endfor %}
+                </div>
               </span>
             </div>
             <div id="story-icon" class="col s6 m6 l6">
@@ -51,27 +47,20 @@
               </div>
             </div>
           </div>
-
           <div class="card-reveal">
             <i class="material-icons left">chrome_reader_mode</i>
             <span class="card-title grey-text text-darken-4">Story<i class="material-icons right">close</i></span>
-
-            <div id="story-content" class="col s6 m6 l6">{{song.story}}
+            <div id="story-content" class="col s6 m6 l6">
+              {{song.story}}
             </div>
-
           </div>
         </div>
-
       </div>
       {% empty %}
       目前無歌曲
       {% endfor %}
     </div>
   </div>
-  </div>
-
-  </div>
-
   <!-- 使用materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- 使用jQuery -->
