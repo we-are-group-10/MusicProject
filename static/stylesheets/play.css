@@ -21,6 +21,10 @@ html, body {
 .Row{
     height: 0em;
 }
+.header{
+    font-family: '微軟正黑體';
+    font-size: 20px;
+}
 #artist{
     font-family: '微軟正黑體';
     margin: 5ex 1ex 1ex 1ex;
@@ -59,6 +63,13 @@ blockquote {
     font-weight: 500;
     padding-left: 14px;
     border-left: 2px solid #bcaaa4;
+}
+.table-of-contents a.active:hover{
+    color: #3e2723;
+}
+.active{
+    font-size: 15px;
+    font-family: '微軟正黑體';
 }
 .ellipsis{
     overflow : auto;
