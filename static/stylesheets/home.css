@@ -54,7 +54,7 @@ html, body {
     right:25px;
 }
 
-#style {
+#class-styles {
     position: relative;
     width:250px;
     height:250px;
@@ -71,3 +71,51 @@ html, body {
     left: 25px;
     right:25px;
 }
+#con-word{
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right:25px;
+}
+#ele-word{
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    right:25px;
+}
+#hip-word{
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 20px;
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    right:25px;
+}
+#pop-word{
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 20px;
+    position: absolute;
+    top: 155px;
+    left: 25px;
+    right:25px;
+}
+#rock-word{
+    display:none;
+    font-family: '微軟正黑體';
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    right:25px;
+}
+
+
+
