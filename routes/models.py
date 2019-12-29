@@ -53,10 +53,10 @@ class SongInfo (models.Model):
     class Meta: #資料表顯示時的名字
         verbose_name, verbose_name_plural = '歌曲資訊', '歌曲資訊'
     def artist_name(self):
-        try: # 去除最後一個 Artist 後面的逗號
+        try:
             all_artist = self.artist.all()
             data = all_artist[0].artist_name
-            for x in range(1, len(all_artist)):
+            for x in range(1, len(all_artist)): # 去除最後一個 Artist 後面的逗號
                 data = data + ", " + all_artist[x].artist_name
             return data
         except:

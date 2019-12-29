@@ -15,18 +15,31 @@
 <body>
   <div class="container">
     <div id="btn-box" class="row">
+      {% for song in songs %}
       <div id="pic-div" class="col s6 m4 l4">
         <div class="card">
           <div class="activator card-image waves-effect waves-block waves-light">
             <div><img id="pic-button"
-                src="https://cdn.shopify.com/s/files/1/0082/4315/0908/products/OMAM_FeverDream_Explicit1_1_3000x.jpg?v=1558206646"
+                src="/media/{{song.artwork}}"
                 width="100%">
             </div>
-            <span id="song-name" class="card-title btn-flat" style="text-decoration:underline;">Wild Roses</span>
+            <span id="song-name" class="card-title btn-flat" style="text-decoration:underline;">{{song.song_name}}</span>
           </div>
           <div class="row">
+            <!-- artist 不只一個，用 for 迴圈叫出每一個 -->
+      <!--  all_artist = self.artist.all()
+            data = all_artist[0].artist_name
+            for x in range(1, len(all_artist)): # 去除最後一個 Artist 後面的逗號
+                data = data + ", " + all_artist[x].artist_name  -->
             <div id="song-div" class="col s6 m6 l6">
-              <div id="singer-name" class="btn-flat ">Of Monsters
+              <div id="singer-name" class="btn-flat ">
+                {% for artist in song.artist.all %}
+                  <!-- 若為 for 迴圈的最後一次為 true -->
+                  {{artist}}
+                  {% if not forloop.last %}
+                  ,
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
             <div id="story-icon" class="col s6 m6 l6">
@@ -36,14 +49,16 @@
             </div>
           </div>
           <!-- <div class="row">
-              <div class="col s6 m6 l6"> -->
+                  <div class="col s6 m6 l6"> -->
           <div class="card-reveal">
             <i class="material-icons left">chrome_reader_mode</i>
             <span class="card-title grey-text text-darken-4">Story<i class="material-icons right">close</i></span>
-            <div id="story-content" class="col s6 m6 l6">1212213</div>
+            <div id="story-content" class="col s6 m6 l6">{{song.story}}</div>
           </div>
         </div>
+
       </div>
+      {% endfor %}
     </div>
   </div>
 
