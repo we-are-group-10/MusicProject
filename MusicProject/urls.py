@@ -22,7 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('play/', play),
+    path('play/<int:id>', play), # 網址命名
     path('songlist/', songlist),
     path('artistpage/', artistpage),
 ]

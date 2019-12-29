@@ -28,21 +28,21 @@
             <div class="col l12"><h6 class="header">Video</h6></div>
             <div class="col l5">
               <p>
-                <iframe width="280" height="175" src="https://www.youtube.com/embed/SlPhMPnQ58k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="280" height="175" src="{{song.mv}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </p>
             </div>
           </div>
           <div id="intros" class="section scrollspy row">
-            <div class="col"><a id="song" href="#" class="intro" >歌名</a></div>
-            <div class="col"><a id="year" href="#" class="intro">年份</a></div>
-            <div class="col"><a id="popular" href="#" class="intro">冷熱門</a></div>
-            <div class="col"><a id="style" href="#" class="intro">曲風</a></div>
+            <div class="col"><a id="song" href="#" class="intro" >{{song.song_name}}</a></div>
+            <div class="col"><a id="year" href="#" class="intro">{{song.year}}</a></div>
+            <div class="col"><a id="popular" href="#" class="intro">{{song.category}}</a></div>
+            <div class="col"><a id="style" href="#" class="intro">{{song.style}}</a></div>
             </div>
           <div id="lyrics" class="section scrollspy row">
             <h6 class="header">Lyrics</h6>
             <blockquote>
 
-              歌詞
+              {{lycris|safe}}
 
             </blockquote>
           </div>
@@ -50,7 +50,8 @@
           <div id="story" class="section scrollspy row">
             <h6 class="header">Story</h6>
             <blockquote>
-              故事
+
+              {{song.story}}
 
             </blockquote>
           </div>
