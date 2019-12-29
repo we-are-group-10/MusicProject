@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- cs -->
+  <link rel="stylesheet" href="/static/stylesheets/play.css">
+
+</head>
+
+<body class="brown lighten-4">
+  <header>
+    <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only">
+      <i class="material-icons"></i>
+    </a>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <!-- <div class="col s12 m12 offset-m1 xl7 offset-xl1"> -->
+          
+          <div id="video" class="section scrollspy row">
+            <div class="col l12"><h6 class="header">Video</h6></div>
+            <div class="col l5">
+              <p>
+                <iframe width="280" height="175" src="https://www.youtube.com/embed/SlPhMPnQ58k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </div>
+          </div>
+          <div id="intros" class="section scrollspy row">
+            <div class="col"><a id="song" href="#" class="intro" >歌名</a></div>
+            <div class="col"><a id="year" href="#" class="intro">年份</a></div>
+            <div class="col"><a id="popular" href="#" class="intro">冷熱門</a></div>
+            <div class="col"><a id="style" href="#" class="intro">曲風</a></div>
+            </div>
+          <div id="lyrics" class="section scrollspy row">
+            <h6 class="header">Lyrics</h6>
+            <blockquote>
+
+              歌詞
+
+            </blockquote>
+          </div>
+
+          <div id="story" class="section scrollspy row">
+            <h6 class="header">Story</h6>
+            <blockquote>
+              故事
+
+            </blockquote>
+          </div>
+        </div>
+
+
+        <div class="col hide-on-small-only m3 l2">
+          <!-- <div class="col hide-on-small-only m3 xl3 offset-xl1"> -->
+          <div class="toc-wrapper pinned" style="top: 0px;" id="myNavbar">
+            <div style="height: 1px;">
+              <ul class="section table-of-contents">
+                <li>
+                  <a href="#video" class="active">Video</a>
+                </li>
+                <li>
+                  <a href="#lyrics" class="active">Lyric</a>
+                </li>
+                <li>
+                  <a href="#story" class="active">Story</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- 使用materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- js -->
+  <!-- 使用jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery.js"></script> -->
+  <script src="/static/javascripts/play.js" type="text/javascript"></script>
+</body>
+
+</html>
