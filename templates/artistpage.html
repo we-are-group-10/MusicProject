@@ -19,40 +19,28 @@
     <div id="btn-box" class="row">
       <!-- 寫該row裡的column -->
       <div class="col s12 m4 l4">
-        <img id="singerPhoto" src="https://i.kfs.io/artist/global/208501,0v5/fit/300x300.jpg" alt="Image" border="0">
+        <img id="singerPhoto" src="/media/{{artist.picture}}" alt="Image" border="0">
       </div>
       <!-- 歌手介紹 -->
       <div id="singerIntro" class="col s12 m8 l8">
         <span class="title_intro">歌手介紹</span>
         <div class="ellipsis">
-          獸人樂團（Of Monsters and Men）是一支來自冰島的獨立民謠暨獨立搖滾樂隊。<br>
-          樂隊成立於2010年並在同年獲得了Músíktilraunir音樂競賽冠軍。在2011年，他們發布了首張專輯My Head Is an Animal，並在美國公告牌排行榜取得了第六名的成績。
-          其中的單曲「Little Talks」在許多國家都榜上有名，在美國公告牌另類音樂排行榜上更是名列榜首。<br>
-          值得一提的是，樂隊贏得了2013年歐洲跨國界音樂獎，該獎旨在獎勵在歐洲各國取得成功的音樂藝人。
-          在音樂創作上，樂隊常使用奇幻主題的歌詞，用二重唱與悅耳的民謠旋律編織歌曲。演奏時常使用小號、吉他、鋼琴、手風琴和低音吉他。
-          通過對流行搖滾成分與敘事曲風格的結合，樂隊打造出了自己富有感染力的歐洲民謠搖滾印記。<br>
-          相隔了四年，在2015年3月16日，Of Monsters and Men這次邀請到曾為謬思合唱團/MUSE、擁抱人群樂團/Foster The People等樂團操刀的另類音樂王牌製作人Rich Costey，一起打造全新專輯Beneath The Skin（英語：Beneath the Skin (Of Monsters and Men album)）。最先釋出的單曲Crystals，同時也是專輯的開場曲，已在冰島排行榜拿下冠軍。
+          {{artist.introduce}}
         </div>
       </div>
       <!-- 歌曲 -->
       <div class="col s12 m12 l12">
         <span class="title_list">歌曲</span>
       </div>
+      {% for song in songs %}
       <div id="song1" class="songList col s12 m12 l12" >
         <ul>
-          <li><a href="#">1. 歌曲_1</a></li>
+          <li><a href="#">
+            {{song.song_name}}
+          </a></li>
         </ul>
       </div>
-      <div id="song2" class="songList col s12 m12 l12" >
-        <ul>
-          <li><a href="#">2. 歌曲_2</a></li>
-        </ul>
-      </div>
-      <div id="song3" class="songList col s12 m12 l12" >
-        <ul>
-          <li><a href="#">3. 歌曲_3</a></li>
-        </ul>
-      </div>
+      {% endfor %}
     </div>
   </div>
   <!-- materialize -->

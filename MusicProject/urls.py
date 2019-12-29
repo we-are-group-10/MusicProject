@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('play/<int:id>', play), # 網址命名
-    path('songlist/', songlist),
-    path('artistpage/<str:artist_name>', artistpage),
+    path('songlist/<str:style>/', songlist),
+    path('artistpage/<int:id>', artistpage),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

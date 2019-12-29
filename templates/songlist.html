@@ -26,13 +26,13 @@
             <span id="song-name" class="card-title btn-flat" style="text-decoration:underline;">{{song.song_name}}</span>
           </div>
           <div class="row">
-            <!-- artist 不只一個，用 for 迴圈叫出每一個 -->
       <!--  all_artist = self.artist.all()
             data = all_artist[0].artist_name
             for x in range(1, len(all_artist)): # 去除最後一個 Artist 後面的逗號
                 data = data + ", " + all_artist[x].artist_name  -->
             <div id="song-div" class="col s6 m6 l6">
               <div id="singer-name" class="btn-flat ">
+                <!-- artist 不只一個，用 for 迴圈叫出每一個 -->
                 {% for artist in song.artist.all %}
                   <!-- 若為 for 迴圈的最後一次為 true -->
                   {{artist}}
