@@ -16,7 +16,7 @@
   <div class="container">
     <div id="btn-box" class="row">
       {% for song in songs %}
-      <div id="pic-div" class="col s6 m4 l4">
+      <div id="pic-div" class="col s6 m4 l4"onclick="location.href='/play/{{song.id}}/'">
         <div class="card">
           <div class="activator card-image waves-effect waves-block waves-light">
             <div>
@@ -56,8 +56,6 @@
           </div>
         </div>
       </div>
-      {% empty %}
-      目前無歌曲
       {% endfor %}
     </div>
   </div>
