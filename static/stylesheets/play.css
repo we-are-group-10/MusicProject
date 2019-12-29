@@ -36,7 +36,7 @@ html, body {
 }
 #video{
     position: relative;
-    height:300px;
+    height:250px;
     margin: 1ex 1ex 1ex 1ex;
 }
 #lyrics,#story{
@@ -53,4 +53,9 @@ blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
     border-left: 5px solid #eed754;
+}
+.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 14px;
+    border-left: 2px solid #eed754;
 }
