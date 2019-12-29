@@ -23,14 +23,14 @@
               <img id="pic-button" src="/media/{{song.artwork}}" width="100%">
             </div>
             <span id="song-name" class="card-title btn-flat" style="text-decoration:underline;"
-              title="{{song.song_name}}" onclick="location.href='/play/{{song.id}}'">{{song.song_name}}
+              title="{{song.song_name}}">{{song.song_name}}
             </span>
           </div>
           <div class="row">
             <div id="song-div" class="col s6 m6 l6">
-              <span id="singer-name" class="btn-flat "
+              <span id="singer-name"
                 title="{% for artist in song.artist.all %}{{artist}}{% if not forloop.last %},{% endif %}{% endfor %}">
-                <div id="singer-name" class="btn-flat ">
+                <span id="singer-name">
                   {% for artist in song.artist.all %}
                   <!-- 若為 for 迴圈的最後一次為 true -->
                   {{artist}}
@@ -38,7 +38,7 @@
                   ,
                   {% endif %}
                   {% endfor %}
-                </div>
+                </span>
               </span>
             </div>
             <div id="story-icon" class="col s6 m6 l6">

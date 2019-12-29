@@ -18,9 +18,9 @@
     max-width: 20vw;
 }
 #singer-name{
-    font-size: 15px;
+    font-size: 18px;
     max-width: 10vw;
-    text-decoration: underline;
+    right: 3px;
 }
 .card-title{
     min-width: 35vw;
