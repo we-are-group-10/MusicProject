@@ -8,6 +8,7 @@ $(document).ready(function () {
         // $("#h-word").attr('style', 'display:block');
         $("#c-word").fadeIn("5000");
         $("#h-word").fadeIn("5000");
+        // $("#s-word").fadeOut();
         // }
     });
     $("#popular").mouseleave(function(){
@@ -19,7 +20,24 @@ $(document).ready(function () {
         };
         // });
     });
+    $("#class-styles").mouseover(function () {
+        // $("#p-word").fadeOut();
+        $("#s-word").fadeOut();
+        // console.log("ada");
+        $("#con-word").fadeIn("5000");
+        $("#ele-word").fadeIn("5000");
+        $("#hip-word").fadeIn("5000");
+        $("#pop-word").fadeIn("5000");
+        $("#rock-word").fadeIn("5000");
+    });
+    $("#class-styles").mouseleave(function(){
+        if($("#s-word").css('display') == 'none' ){
+            $("#con-word").fadeOut("5000");
+            $("#ele-word").fadeOut("5000");
+            $("#hip-word").fadeOut("5000");
+            $("#pop-word").fadeOut("5000");
+            $("#rock-word").fadeOut("5000");
+            $("#s-word").fadeIn("5000");
+        };
+    });
 });
-
-
-
