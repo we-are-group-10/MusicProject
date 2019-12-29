@@ -24,6 +24,6 @@ urlpatterns = [
     path('', home),
     path('play/<int:id>', play), # 網址命名
     path('songlist/', songlist),
-    path('artistpage/', artistpage),
+    path('artistpage/<str:artist_name>', artistpage),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
