@@ -1,26 +1,25 @@
-#pic-button {
-    border-radius: 5% 5% 5% 5%;
-}
+
 #btn-box {
     margin-top: 5%;
 }
 #pic-div {
     height: 100vh;
 }
-#song-name, #singer-name {
+#song-name, #singer-name{
     font-family: '微軟正黑體';
-    font-size: 15px;
-    min-width: 50vh;
-    max-width: 100vh; 
-    white-space: nowrap; 
+    min-width: 10vw;   
+    white-space: nowrap;
+    overflow: hidden; 
     text-overflow: ellipsis; 
-    border-radius: 5% 5% 5% 5%;
-    /* display : inline-block; */
-
+    text-decoration: underline;
 }
-/* #singer-name {
-    font-family: '微軟正黑體';
+#song-name{
     font-size: 15px;
-    min-width: 50%;
-    max-width: 100%;
-} */
+    margin-bottom: 15px;
+    margin-left: 5px;
+    max-width: 20vw; 
+}
+#singer-name{
+    font-size: 15px;
+    max-width: 18vw; 
+}
