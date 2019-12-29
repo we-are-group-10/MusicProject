@@ -8,39 +8,49 @@
   <title>Artistpage</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="/static/stylesheets/artistpage.css">
 </head>
 
-<body>
+<body class="brown lighten-4">
   <!--materialize grid 排版-->
   <div class="container">
     <div id="btn-box" class="row">
       <!-- 寫該row裡的column -->
       <div class="col s12 m4 l4">
-        <img id="singerPhoto" src="https://i.kfs.io/artist/global/32733,0v2/fit/300x300.jpg" alt="Image" border="0">
+        <img id="singerPhoto" src="https://i.kfs.io/artist/global/208501,0v5/fit/300x300.jpg" alt="Image" border="0">
       </div>
       <!-- 歌手介紹 -->
       <div id="singerIntro" class="col s12 m8 l8">
-        <p class="ellipsis">被媒體形容為關史蒂芬妮+凱莉米洛+瑪丹娜+克莉絲汀超級合體，本名Stefani Gabriella Germanotta的Lady GaGa來自紐約一個環境優渥的義裔家庭，4歲學會彈琴，14歲開始在紐約下東城的地下舞廳表演，看盡了音樂人生百態的Lady GaGa在17歲那年離開了地下舞廳，立志要做出與眾不同的真正流行樂！
-          19歲簽入美國嘻哈大廠Def Jam，三個月後遭到解約；遭到解約的Lady GaGa並未感到喪志，反而更認真將精力投注在一場又一場的表演，她的才華再度受到阿肯的賞識納入旗下成為專屬詞曲創作人，並開始為菲姬、小甜甜布蘭妮、小野貓、街頭頑童…等天王天后寫歌創作。經過三年磨練，2008年Lady GaGa以皇后合唱團的暢銷曲《Radio Ga-Ga》為靈感取名『Lady GaGa』，推出個人專輯【The Fame】，首波單曲《Just Dance》滿載著高壓Electro-Pop電子氣流全面攻陷英美流行單曲榜NO.1，成為2009年首位攻佔告示牌王位的女歌手，強勢問鼎葛萊美，英國BBC更將她選為「Sound of 2009」。
-          除了前衛音樂與天才創作席捲全球樂壇外，Lady Gaga獨特的穿著品味也攻佔各大時尚版面，白金妹妹頭齊長髮、無鏡架大墨鏡、超大嘻哈帽套、顏面閃電…等炫猛造型立即成為青少年爭相模仿的對象，身兼創作演唱的不造作風格更被媒體譽為新一代話題女王。結合流行、舞曲、節奏藍調…等風格，收放自若、大玩Pop Rock魅力精髓之全新女神！
-        </p>
+        <span class="title_intro">歌手介紹</span>
+        <div class="ellipsis">
+          獸人樂團（Of Monsters and Men）是一支來自冰島的獨立民謠暨獨立搖滾樂隊。<br>
+          樂隊成立於2010年並在同年獲得了Músíktilraunir音樂競賽冠軍。在2011年，他們發布了首張專輯My Head Is an Animal，並在美國公告牌排行榜取得了第六名的成績。
+          其中的單曲「Little Talks」在許多國家都榜上有名，在美國公告牌另類音樂排行榜上更是名列榜首。<br>
+          值得一提的是，樂隊贏得了2013年歐洲跨國界音樂獎，該獎旨在獎勵在歐洲各國取得成功的音樂藝人。
+          在音樂創作上，樂隊常使用奇幻主題的歌詞，用二重唱與悅耳的民謠旋律編織歌曲。演奏時常使用小號、吉他、鋼琴、手風琴和低音吉他。
+          通過對流行搖滾成分與敘事曲風格的結合，樂隊打造出了自己富有感染力的歐洲民謠搖滾印記。<br>
+          相隔了四年，在2015年3月16日，Of Monsters and Men這次邀請到曾為謬思合唱團/MUSE、擁抱人群樂團/Foster The People等樂團操刀的另類音樂王牌製作人Rich Costey，一起打造全新專輯Beneath The Skin（英語：Beneath the Skin (Of Monsters and Men album)）。最先釋出的單曲Crystals，同時也是專輯的開場曲，已在冰島排行榜拿下冠軍。
+        </div>
       </div>
       <!-- 歌曲 -->
-      <div id="song1" class="col s12 m12 l12" >
+      <div class="col s12 m12 l12">
+        <span class="title_list">歌曲</span>
+      </div>
+      <div id="song1" class="songList col s12 m12 l12" >
         <ul>
-          <li><a href="#">歌曲1</a></li>
+          <li><a href="#">1. 歌曲_1</a></li>
         </ul>
       </div>
-      <div id="song2" class="col s12 m12 l12" >
+      <div id="song2" class="songList col s12 m12 l12" >
         <ul>
-          <li><a href="#">歌曲2</a></li>
+          <li><a href="#">2. 歌曲_2</a></li>
         </ul>
       </div>
-      <div id="song3" class="col s12 m12 l12" >
+      <div id="song3" class="songList col s12 m12 l12" >
         <ul>
-          <li><a href="#">歌曲3</a></li>
+          <li><a href="#">3. 歌曲_3</a></li>
         </ul>
       </div>
     </div>
