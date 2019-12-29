@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('songlist/', songlist),
-    path('artiistpage/', artistpage),
+    path('artistpage/', artistpage),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
