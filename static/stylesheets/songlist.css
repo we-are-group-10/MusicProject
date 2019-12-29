@@ -1,0 +1,25 @@
+
+#btn-box {
+    margin-top: 5%;
+}
+#pic-div {
+    height: 100vh;
+}
+#song-name, #singer-name{
+    font-family: '微軟正黑體';
+    min-width: 10vw;   
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-decoration: underline;
+}
+#song-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    max-width: 20vw; 
+}
+#singer-name{
+    font-size: 15px;
+    max-width: 18vw; 
+}

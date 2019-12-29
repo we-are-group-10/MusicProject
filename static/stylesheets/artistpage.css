@@ -1,0 +1,43 @@
+/* 不貼齊頁面頂端 */
+/* #head{
+    margin-top:30px ;
+} */
+#singerPhoto{
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    max-width: 100%;
+}
+#singerIntro{
+    font-family : '微軟正黑體';
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* .ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+} */
+/* 要寫js做動態載入 */
+#song1, #song2, #song3{
+    font-family: '微軟正黑體';
+    font-size: 15px;
+    margin-top: 5px;
+    border: 1px;
+    background-color: rgb(230, 230, 230);
+}
+a {
+    color: inherit;
+    display: block;
+    font-size: 1.2rem;
+    border: 0;
+    text-decoration: none;
+}
+li :hover{
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
