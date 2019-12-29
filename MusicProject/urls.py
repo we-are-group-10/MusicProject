@@ -22,8 +22,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('play/', play),
+    path('play/<int:id>', play), # 網址命名
     path('songlist/', songlist),
-    path('artistpage/', artistpage),
+    path('artistpage/<str:artist_name>', artistpage),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
