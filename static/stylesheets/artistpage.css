@@ -1,11 +1,26 @@
 #btn-box{
     margin-top: 3%;
 }
-#singerPhoto{
+.title_pic{
+    font-family: '微軟正黑體';
+    font-size: 25px;
+}
+.singerPhoto{
     height: 250px;
     width: 250px;
+    position: relative;
+}
+img{
+    max-height: 100%;
     max-width: 100%;
-    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 #singerIntro{
     font-family : '微軟正黑體';

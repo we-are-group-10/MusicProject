@@ -38,6 +38,12 @@
             <div class="col"><a id="year" href="#">{{song.year}}</a></div>
             <div class="col"><a id="popular" href="#" class="intro">{{song.category}}</a></div>
             <div class="col"><a id="style" href="#" class="intro">{{song.style}}</a></div>
+            {% for artist in song.artist.all %}
+            <div class="col"><a id="song" onclick="location.href='/artistpage/{{artist.id}}/'" class="intro">{{artist.artist_name}}</a></div>
+            {% endfor %}
+            <div class="col"><a id="year" href="#" class="intro">{{song.year}}</a></div>
+            <div class="col"><a id="popular" onclick="location.href='/songlist/category/{{song.category}}/'" class="intro">{{song.category}}</a></div>
+            <div class="col"><a id="style" onclick="location.href='/songlist/style/{{song.style}}/'" class="intro">{{song.style}}</a></div>
             </div>
           <div id="lyrics" class="section scrollspy row">
             <h6 class="header">歌詞</h6>
