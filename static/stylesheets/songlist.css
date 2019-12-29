@@ -10,17 +10,18 @@
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; 
-    min-width: 15vw;  
+    min-width: 10vw;  
 
 }
 #song-name{
     font-size: 2vw;
     max-width: 20vw;
+
 }
 #singer-name{
     font-size: 18px;
-    max-width: 10vw;
-    right: 3px;
+    max-width: 20vw;
+
 }
 .card-title{
     min-width: 35vw;

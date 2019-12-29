@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body class="brown lighten-4">
   <div class="container">
     <div id="btn-box" class="row">
       {% for song in songs %}
@@ -28,7 +28,7 @@
           </div>
           <div class="row">
             <div id="song-div" class="col s6 m6 l6">
-              <span id="singer-name"
+              <span id="singer-name" 
                 title="{% for artist in song.artist.all %}{{artist}}{% if not forloop.last %},{% endif %}{% endfor %}">
                 <span id="singer-name">
                   {% for artist in song.artist.all %}
