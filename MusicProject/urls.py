@@ -25,6 +25,8 @@ urlpatterns = [
     path('play/<int:id>/', play), # 網址命名
     path('songlist/category/<str:category>/', songlist_category),
     path('songlist/style/<str:style>/', songlist_style),
-    path('artistpage/<int:id>/', artistpage),
+    path('artistpage/<int:id>/', artistpage), #(pattern, action)
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# 利用 urlpatterns 這個變數進行 pattern 與 action 的對應
+# pattern : 在 url 中出現在網域後面的東西，網站的子分頁

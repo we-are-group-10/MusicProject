@@ -37,7 +37,8 @@ INSTALLED_APPS = [ # 要執行的東西
     'django.contrib.sessions', # cookie
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'routes', # models 資料夾的名字(不在 MusicProject 資料夾中則需寫完整路徑)
+    'routes.apps.RoutesConfig', # routes 底下的 apps 檔中的函式
+    # 若不在 MusicProject 資料夾中則需寫完整路徑
 ]
 
 MIDDLEWARE = [
@@ -52,10 +53,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MusicProject.urls'
 
+# 告知模板存放位置
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')], #從 templates 中依序找欲使用的模板
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,4 +130,4 @@ STATICFILES_FINDERS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/' # 圖片的存放位置及網址
