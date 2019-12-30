@@ -52,10 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MusicProject.urls'
 
+# 告知模板存放位置
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')], #從 templates 中依序找欲使用的模板
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,4 +129,4 @@ STATICFILES_FINDERS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/' # 圖片的存放位置及網址

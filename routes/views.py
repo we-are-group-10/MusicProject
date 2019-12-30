@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from .models import SongInfo, Category, Artist, Style
 
-
 # Create your views here.
 #templates裡會用到的檔案 皆在這呼叫
-def home(request) :
-    return render(request, 'home.html')
+
+def home(request) : 
+    return render(request, 'home.html') # render = 回傳 HttpResponse
 def play(request, id) :
     item = SongInfo.objects.get(id=id)
     lyrics = item.lycris.replace('\n', '<br>')
