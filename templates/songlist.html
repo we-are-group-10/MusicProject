@@ -31,7 +31,6 @@
               <span id="singer-name"
                 title="{% for artist in song.artist.all %}{{artist}}{% if not forloop.last %},{% endif %}{% endfor %}"> 
                   {% for artist in song.artist.all %}
-                  <!-- 若為 for 迴圈的最後一次為 true -->
                   {{artist}}
                   {% if not forloop.last %}
                   ,
