@@ -37,7 +37,8 @@ INSTALLED_APPS = [ # 要執行的東西
     'django.contrib.sessions', # cookie
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'routes.apps.RoutesConfig', # models 資料夾的名字(不在 MusicProject 資料夾中則需寫完整路徑)
+    'routes.apps.RoutesConfig', # routes 底下的 apps 檔中的函式
+    # 若不在 MusicProject 資料夾中則需寫完整路徑
 ]
 
 MIDDLEWARE = [
